@@ -15,7 +15,7 @@ export const Eatery = (eateryObject) => {
     `
 
 }
-//Ammeneties:  petFriendly, wifi, diaperFacility, playground, restrooms, wheelchairAccessible
+//Ameneties:  petFriendly, wifi, diaperFacility, playground, restrooms, wheelchairAccessible
 
 function Ameneties(currentObject){
 
