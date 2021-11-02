@@ -1,6 +1,5 @@
 import { settings } from "../Settings.js"
 
-console.log(settings)
 let weather = []
 
 export const weatherData = () => {
@@ -8,10 +7,9 @@ export const weatherData = () => {
 }
 
 export const fiveDay = () => {
-    return fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${INSERT LATITUDE}&lon=${INSERT LONGITUDE}&appid=${settings.weatherKey}`)
+    return fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${}&lon=${}&appid=${settings.weatherKey}`)
     .then (weatherResponse => weatherResponse.json())
     .then (weatherReceipt => {
-        console.table(weatherReceipt)
         weather = weatherReceipt
     })
 }
@@ -19,3 +17,4 @@ export const fiveDay = () => {
 // Unmolested fetch URLs:
 // api.openweathermap.org/data/2.5/forecast?zip={zip code},{country code}&appid={API key}
 // api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
+// api.openweathermap.org/data/2.5/forecast/daily?lat={lat}&lon={lon}&cnt={cnt}&appid={API key}
