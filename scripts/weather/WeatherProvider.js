@@ -16,5 +16,6 @@ export const fiveDay = () => {
     })
 }
 
+// Unmolested fetch URLs:
 // api.openweathermap.org/data/2.5/forecast?zip={zip code},{country code}&appid={API key}
 // api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
