@@ -1,9 +1,18 @@
-footer {
+    /* COLORS: */
+    /* blue: rgb(4, 86, 110); */
+    /* dark green: rgb(104, 147, 104 */
+    /* bright green: rgb(180, 211, 48) */
+    /* tan: rgb(214, 198, 157)*/
+    
+footer p{
     font-size: 12px;
     text-align: center;
+    color: white;
+
+    background-color: rgb(104, 147, 104);
     padding: 20px;
 }
 
 footer a{
-    color: rgb(180, 211, 48)
+    color: rgb(180, 211, 48);
 }
