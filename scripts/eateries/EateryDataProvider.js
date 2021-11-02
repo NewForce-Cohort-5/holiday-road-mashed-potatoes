@@ -10,7 +10,7 @@ export const getEatery = () => {
     .then(messyEateryList => messyEateryList.json())
 
     .then(sortedEateryList => {
-            console.table(sortedEateryList)
+            // console.table(sortedEateryList)
             eatery = sortedEateryList
         }
     )
