@@ -8,7 +8,7 @@ export const weatherData = () => {
 }
 
 export const fiveDay = () => {
-    return fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${}&lon=${}&appid=${settings.weatherKey}`)
+    return fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${INSERT LATITUDE}&lon=${INSERT LONGITUDE}&appid=${settings.weatherKey}`)
     .then (weatherResponse => weatherResponse.json())
     .then (weatherReceipt => {
         console.table(weatherReceipt)
