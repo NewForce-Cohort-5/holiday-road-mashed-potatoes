@@ -1,25 +1,31 @@
 import { bizarreCard } from './AttractionsCard.js'
 import { getAttractions, useAttractions } from './AttractionProvider.js'
 
+const contentTarget = document.querySelector(".attractionsList")
 
-
-const contentTarget = document.querySelector(".bizarre-form-container")
-
-export const AttractionsList = () => {
+export const attractionSelect = (attractionsFilter) => {
+    let attractionsListContainer = document.querySelector(".attractionsList");
+    attractionsListContainer.innerHTML = "";
+    
     getAttractions()
     .then(() => {
+        let attractionsArray = useAttractions();
+        let attractionHTML = "";
 
-        let allTheAttractions = useAttractions();
+        if(attractionsFilter){
+            attractionsArray = attractionsArray.filter(singleAttractionInLoop => {
+                return singleAttractionInLoop.bizarreriesname === attractionsFilter
+            })
+        }
 
-        let AttractionHTML = "";
+        attractionsArray.forEach((attractionsObject) => {
+            attractionHTML += bizarreCard(attractionsObject)
+        })
 
-        allTheAttractions.forEach((singleAttraction) => {
+        contentTarget.innerHTML = `<h2>Attractions</h2>
+        <div class="attractionsList">${attractionHTML}</div>
+        `
+    })
+}
 
-            AttractionHTML += bizarreCard(singleAttraction);
 
-        });
-       
-        contentTarget.innerHTML += AttractionHTML
-    
-    });
-};

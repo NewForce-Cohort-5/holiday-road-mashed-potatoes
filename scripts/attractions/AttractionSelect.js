@@ -1,28 +1,21 @@
 import { getAttractions, useAttractions } from './AttractionProvider.js'
 import { AttractionsList } from './AttractionList.js'
 
-const contentTarget = document.querySelector(".attractionsList")
+const contentTarget = document.querySelector(".attractions-Dropdown")
 
-export const attractionSelect = (attractionsFilter) => {
-    let attractionsListContainer = document.querySelector(".attractionsList");
-    attractionsListContainer.innerHTML = ""
-    
+export const attractionSelect = () => {
+
     getAttractions()
     .then(() => {
-        let attractionsArray = useAttractions();
-        let attractionHTML = "";
-
-        if(attractionsFilter){
-            attractionsArray.filter(singleAttractionInLoop => {
-                return singleAttractionInLoop.bizarreriesname === attractionsFilter
-            })
-        }
-
-        
+        const attractions = useAttractions()
+        render(attractions)
     })
 }
 
-
+const render = attractionsCollection => {
+    contentTarget.innerHTML = `
+    <select class="dropdown" id="attractionSelect"`
+}
 
 
 
