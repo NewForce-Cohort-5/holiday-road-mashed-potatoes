@@ -5,7 +5,7 @@ export const bizarreCard = (bizarreries) => {
             <h4 class="name-biz">${bizarreries.name}</h4>
             <li class="state-name">${bizarreries.state}</li>
             <p class ="biz-description">${bizarreries.description}</p>
-            <a class="ameneties"> "souvenirs:"${bizarreries.souvenirs} "restrooms:"${bizarreries.restrooms}</a>
+            <a class="ameneties"> "souvenirs:"${bizarreries.ameneties.souvenirs} "restrooms:"${bizarreries.ameneties.restrooms}</a>
         </div>
     </section>
     `

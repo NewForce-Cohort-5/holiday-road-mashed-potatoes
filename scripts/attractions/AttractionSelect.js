@@ -1,23 +1,28 @@
 import { getAttractions, useAttractions } from './AttractionProvider.js'
 import { AttractionsList } from './AttractionList.js'
 
-const contentTarget = document.querySelector(".filters-attractions")
+const contentTarget = document.querySelector(".attractionsList")
 
-export const attractionSelect = () => {
+export const attractionSelect = (attractionsFilter) => {
+    let attractionsListContainer = document.querySelector(".attractionsList");
+    attractionsListContainer.innerHTML = ""
+    
     getAttractions()
     .then(() => {
-        let attractionArray = useAttractions();
-        render(attractionArray)
+        let attractionsArray = useAttractions();
+        let attractionHTML = "";
+
+        if(attractionsFilter){
+            attractionsArray.filter(singleAttractionInLoop => {
+                return singleAttractionInLoop.bizarreriesname === attractionsFilter
+            })
+        }
+
+        
     })
 }
 
-const render = attractionsCollection => {
-    contentTarget.innerHTML = `
-    <select class="dropdown" id="attractionSelect">
-        <option value="0">Please select an attractions...</option>
-        ${attractionsCollection.map(attractionObject)}`
-}
 
 
-const 
+
 
