@@ -1,7 +1,7 @@
 import { useEatery, getEatery } from "./EateryDataProvider.js"
 import { EateryList } from "./EateryList.js"
 
-const contentTarget = document.querySelector(".eateryDropDown")
+const contentTarget = document.querySelector(".eateryDropdown")
 
 export const EaterySelect = () => {
 
