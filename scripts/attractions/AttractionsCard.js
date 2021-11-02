@@ -1,12 +1,28 @@
 export const bizarreCard = (bizarreries) => {
     return `
-    <section class="biz-card">
-        <div class= "list-of-biz">
-            <h4 class="name-biz">${bizarreries.name}</h4>
-            <li class="state-name">${bizarreries.state}</li>
-            <p class ="biz-description">${bizarreries.description}</p>
-            <a class="ameneties"> "souvenirs:"${bizarreries.ameneties.souvenirs} "restrooms:"${bizarreries.ameneties.restrooms}</a>
+        <div class="biz-card">
+            <div class="name-biz"><h3>${bizarreries.name}</h3></div>
+            <div class="state-name"><strong>State: ${bizarreries.state}</strong></div>
+            <div class ="biz-description">${bizarreries.description}</div>
+            <div class="attractionAmeneties"><h3>Ameneties:</h3>
+                <ul id="ameneties">
+                    ${Ameneties(bizarreries.ameneties)}
+                </ul>
+            </div>
         </div>
-    </section>
     `
+}
+
+function Ameneties(currentObject){
+
+    let htmlRepresentation = ""
+        for (let singleAmenety in currentObject){
+            if(currentObject[singleAmenety] === true) {
+                let htmlString = `
+                    <li>${singleAmenety}</li>
+                `
+            htmlRepresentation += htmlString
+        }
+    }
+    return htmlRepresentation
 }

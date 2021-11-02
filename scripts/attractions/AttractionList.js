@@ -3,7 +3,7 @@ import { getAttractions, useAttractions } from './AttractionProvider.js'
 
 const contentTarget = document.querySelector(".attractionsList")
 
-export const attractionSelect = (attractionsFilter) => {
+export const AttractionsList = (attractionsFilter) => {
     let attractionsListContainer = document.querySelector(".attractionsList");
     attractionsListContainer.innerHTML = "";
     
@@ -14,7 +14,7 @@ export const attractionSelect = (attractionsFilter) => {
 
         if(attractionsFilter){
             attractionsArray = attractionsArray.filter(singleAttractionInLoop => {
-                return singleAttractionInLoop.bizarreriesname === attractionsFilter
+                return singleAttractionInLoop.name === attractionsFilter
             })
         }
 
@@ -22,7 +22,8 @@ export const attractionSelect = (attractionsFilter) => {
             attractionHTML += bizarreCard(attractionsObject)
         })
 
-        contentTarget.innerHTML = `<h2>Attractions</h2>
+        contentTarget.innerHTML = `
+        <h2>Attractions</h2>
         <div class="attractionsList">${attractionHTML}</div>
         `
     })

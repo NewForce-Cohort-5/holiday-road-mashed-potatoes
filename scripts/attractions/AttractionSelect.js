@@ -12,10 +12,27 @@ export const attractionSelect = () => {
     })
 }
 
-const render = attractionsCollection => {
+const render = attractionCollection => {
     contentTarget.innerHTML = `
-    <select class="dropdown" id="attractionSelect"`
+        <select class="dropdown" id="attractionSelect">
+            <option value="0">Please select an attraction...</option>
+            ${
+                attractionCollection.map(attractionObject => {
+                    const attractionName = attractionObject.name
+                    return `<option class="attractionName">${attractionName}</option>`
+                })
+            }
+        </select>
+    `
 }
 
-
+const contentbullseye = document.querySelector("body")
+contentbullseye.addEventListener("change", (attractionObject) => {
+  
+    if(attractionObject.target.id === "attractionSelect"){
+        
+       const selectedAttraction= attractionObject.target.value
+       AttractionsList(selectedAttraction)
+    }
+})
 
