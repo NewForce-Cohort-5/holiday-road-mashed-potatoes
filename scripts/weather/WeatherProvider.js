@@ -6,8 +6,8 @@ export const weatherData = () => {
     return weather.slice()
 }
 
-export const fiveDay = () => {
-    return fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${}&lon=${}&appid=${settings.weatherKey}`)
+export const fiveDay = (park) => {
+    return fetch(`http://api.openweathermap.org/data/2.5/onecall?lat=${park.lat}&lon=${park.lon}&exclude=alerts,hourly,minutely,current&units=imperial&appid=${settings.weatherKey}`)
     .then (weatherResponse => weatherResponse.json())
     .then (weatherReceipt => {
         weather = weatherReceipt
