@@ -1,6 +1,6 @@
 import { getParks, useParks } from "./ParkProvider.js";
 import { Park } from "./Park.js";
-import { fiveDay } from "../weather/WeatherProvider.js";
+import { fetchWeather } from "../weather/WeatherProvider.js";
 
 const contentTarget = document.querySelector('.parksDropdown');
 
@@ -23,13 +23,13 @@ const render = (parks) => {
     </select>
   `;
 }
-
+// This section populates Latitude and Longitude for the weather API
 document.querySelector('body').addEventListener('change', e => {
   if (e.target.id === 'parkFilter') {
     const selected = useParks().find( park => park.id === e.target.value );
     parkLatLong['lat'] = selected.latitude;
     parkLatLong['lon'] = selected.longitude;
     document.querySelector('.parkEntry').innerHTML = Park(selected);
-    fiveDay(parkLatLong);
+    fetchWeather(parkLatLong);
   }
 });

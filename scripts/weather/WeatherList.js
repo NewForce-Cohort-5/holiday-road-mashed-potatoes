@@ -4,7 +4,7 @@ import { forecast } from "./WeatherCard.js";
 
 const weatherTarget = document.querySelector("")
 
-export const weatherList = () => {
+export const fiveDayForecast = () => {
     weatherData()
     .then(() => {
         let forecastArray = fiveDay()
