@@ -8,18 +8,40 @@
 
 
 /* Main Content */
-
+main {
+    padding:20px;
+}
 
 /* Footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    background-color: rgb(104, 147, 104);
+    margin-top: 30px;
+    padding: 20px;
+    /* box-shadow: 0px -10px 20px rgb(189, 189, 189); */
+}
+
 footer p{
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     color: white;
-
-    background-color: rgb(104, 147, 104);
-    padding: 20px;
+    padding-top: 10px;
 }
 
 footer a{
+    color: white;
+}
+
+footer a:hover{
     color: rgb(180, 211, 48);
+}
+
+footer img{
+    display: block;
+    width: 70px;
+    height: auto;
+    margin: auto;
 }
