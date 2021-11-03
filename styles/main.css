@@ -13,6 +13,28 @@
     margin-bottom: 200px;
 }
 
+#ameneties ul {
+    padding-left: 0;
+}
+#ameneties li {
+    list-style-type: none;
+}
+
+/* National Parks */
+
+
+/* Attractions */
+
+
+/* Eatery */
+.amenetiesIcon {
+    border: 3px solid magenta;
+}
+
+/* Weather */
+
+
+
 /* Footer */
 footer {
     position: fixed;

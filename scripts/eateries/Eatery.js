@@ -24,7 +24,14 @@ function Ameneties(currentObject){
                 `
                 htmlRepresentation += htmlString
             }
+            else if (currentObject.petFriendly === true) {
+                let htmlString = `
+                    <li><img src="https://img.icons8.com/ios/50/000000/pet.png"" alt="" class="amenetiesIcon"/></li>
+                `
+                htmlRepresentation += htmlString
+            }
         }
     // console.log(htmlRepresentation)
     return htmlRepresentation
 }
+
