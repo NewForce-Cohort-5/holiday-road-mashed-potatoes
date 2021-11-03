@@ -1,6 +1,6 @@
 import { getParks, useParks } from "./ParkProvider.js";
 import { Park } from "./Park.js";
-import { fiveDay, weatherData } from "../weather/WeatherProvider.js";
+import { fetchWeather, weatherData } from "../weather/WeatherProvider.js";
 import { forecast } from "../weather/WeatherCard.js";
 
 const contentTarget = document.querySelector('.parksDropdown');
@@ -31,10 +31,12 @@ document.querySelector('body').addEventListener('change', e => {
     parkLatLong['lat'] = selected.latitude;
     parkLatLong['lon'] = selected.longitude;
     document.querySelector('.parkEntry').innerHTML = Park(selected);
-    fiveDay(parkLatLong).then(() => {
+    fetchWeather(parkLatLong).then(() => {
       let forecastHTML = '';
       const forecastData = weatherData();
-      forecastData.forEach( daily => forecastHTML += forecast(daily) );
+      forecastData.forEach((daily, i) => {
+        if (i < 5) forecastHTML += forecast(daily);
+      });
       document.querySelector('.weather').innerHTML = forecastHTML;
     });
     
