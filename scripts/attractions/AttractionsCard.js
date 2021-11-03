@@ -13,7 +13,6 @@ export const bizarreCard = (bizarreries) => {
         </div>
         </div>     
     `
-    
 }
 
 
