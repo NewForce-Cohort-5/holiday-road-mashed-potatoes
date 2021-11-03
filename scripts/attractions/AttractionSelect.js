@@ -14,7 +14,6 @@ export const attractionSelect = () => {
 
 const render = attractionCollection => {
     contentTarget.innerHTML = `
-    
         <select class="dropdown" id="attractionSelect">
             <option value="0">Please select an attraction...</option>
             ${
@@ -26,6 +25,10 @@ const render = attractionCollection => {
         </select>
     `
 }
+
+
+
+
 
 const contentbullseye = document.querySelector("body")
 contentbullseye.addEventListener("change", (attractionObject) => {
