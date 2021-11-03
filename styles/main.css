@@ -1,0 +1,16 @@
+.weather {
+    border: 1px red;
+    margin: 4px;
+    padding: 4px;
+    display: flex;
+    font-size: small;
+    flex-direction: row;
+}
+.forecast {
+    margin: 1px;
+    padding: 1px;
+}
+.singleDay {
+    margin: 4px;
+    padding: 4px;
+}
