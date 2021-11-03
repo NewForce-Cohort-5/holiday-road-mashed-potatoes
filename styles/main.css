@@ -8,8 +8,9 @@
 
 
 /* Main Content */
-main {
+#container {
     padding:20px;
+    margin-bottom: 200px;
 }
 
 /* Footer */
