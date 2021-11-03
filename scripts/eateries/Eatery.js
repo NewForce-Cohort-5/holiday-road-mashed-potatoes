@@ -43,12 +43,26 @@ function Ameneties(currentObject){
                     src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-restroom-airport-kiranshastry-lineal-kiranshastry.png"
                     break
                 }
-                let htmlString = `
-                    <li><img src="${src}" alt="icon" class="amenetiesEatIcon"/></li>
-                `
-                htmlRepresentation += htmlString
+                
+                htmlRepresentation += `<li><img src="${src}" alt="icon" class="amenetiesEatIcon"/></li>`
             }
         }
     // console.log(htmlRepresentation)
     return htmlRepresentation
 }
+
+// alternate function that loops through entire ameneties and lists them just as a bulleted list instead of as icons like above
+
+// function Ameneties(currentObject){
+
+//     let htmlRepresentation = ""
+//         for (let singleAmenety in currentObject){
+//             if(currentObject[singleAmenety] === true) {
+//                 let htmlString = `
+//                     <li>${singleAmenety}</li>
+//                 `
+//             htmlRepresentation += htmlString
+//         }
+//     }
+//     return htmlRepresentation
+// }
