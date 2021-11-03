@@ -1,5 +1,3 @@
-import { useEatery } from "./EateryDataProvider.js"
-
 export const Eatery = (eateryObject) => {
     return `
         <div class="eateryList-card">
@@ -13,7 +11,6 @@ export const Eatery = (eateryObject) => {
             </div>
         </div>
     `
-
 }
 //Ameneties:  petFriendly, wifi, diaperFacility, playground, restrooms, wheelchairAccessible
 
