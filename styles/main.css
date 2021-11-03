@@ -7,29 +7,61 @@
 /* Nav */
 
 
+
 /* Main Content */
-#container {
-    padding:20px;
-    margin-bottom: 200px;
+main.container {
+    margin: 20px 20px 200px 20px;
 }
 
-#ameneties ul {
-    padding-left: 0;
+
+/* Dropdown Menu */
+.dropdownMenuArea {
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+	flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
 }
-#ameneties li {
-    list-style-type: none;
-}
+
 
 /* National Parks */
+
 
 
 /* Attractions */
 
 
+
 /* Eatery */
-.amenetiesIcon {
-    border: 3px solid magenta;
+.amenetiesEatList {
+    padding-left: 0;
+    margin-left: 0; 
 }
+.amenetiesEatList li {
+    list-style-type: none;
+    font-size: 14px;
+}
+
+.amenetiesEatIcon {
+    width: 60px;
+    height: 60px;
+    border: 2px dashed yellowgreen;
+    padding: 4px;
+    margin-top: 16px;
+}
+
+.amenetiesEatIcon.nope {
+    width: 60px;
+    height: 60px;
+    border: 2px dashed crimson;
+    padding: 4px;
+    margin-top: 16px;
+}
+
+
 
 /* Weather */
 
@@ -64,7 +96,8 @@ footer a:hover{
 
 footer img{
     display: block;
-    width: 70px;
+    width: 90px;
     height: auto;
     margin: auto;
+    border-radius: 20px;
 }
