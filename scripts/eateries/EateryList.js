@@ -13,8 +13,11 @@ export const EateryList = (eateryFilter) => {
         let eateryHTML = "";
     
         if(eateryFilter){
-            eateryArray = eateryArray.filter(singleEateryInLoop => {
-                return singleEateryInLoop.businessName === eateryFilter
+            // array is mapping the eateryFilter and matching each business name by finding the eatery in the array
+            eateryArray = eateryFilter.map(value => {
+                return eateryArray.find(eatery => {
+                    return eatery.businessName === value
+                })
             })
         }
 

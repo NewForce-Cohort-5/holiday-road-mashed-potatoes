@@ -13,11 +13,13 @@ export const AttractionsList = (attractionsFilter) => {
         let attractionHTML = "";
 
         if(attractionsFilter){
-            attractionsArray = attractionsArray.filter(singleAttractionInLoop => {
-                return singleAttractionInLoop.name === attractionsFilter
+            attractionsArray = attractionsFilter.map(value => {
+                return attractionsArray.find(singleAttractionInLoop => {
+                return singleAttractionInLoop.name === value
             })
-        }
-
+        })
+    }
+    
         attractionsArray.forEach((attractionsObject) => {
             attractionHTML += bizarreCard(attractionsObject)
         })
