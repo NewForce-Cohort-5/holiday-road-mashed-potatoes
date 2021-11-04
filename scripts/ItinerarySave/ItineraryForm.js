@@ -8,15 +8,14 @@ document.querySelector("body").addEventListener("click", clickEvent => {
         
         const newItinerary = {
             
-            date: document.querySelector("#date").value,
-            concept: document.querySelector("#concept").value,
-            entry: document.querySelector("#entry").value,
-            mood: document.querySelector("#mood").value,
+            name: document.querySelector("#name").value,
+            businessName: document.querySelector("#businessName").value,
+            entry: document.querySelector("#fullname").value
         }
         console.log(newItinerary)
         
-        document.querySelector("#date").value = ""
-        document.querySelector("#concept").value = ""
+        document.querySelector("#name").value = ""
+        document.querySelector("#businessName").value = ""
         document.querySelector("#entry").value = ""
         document.querySelector("#mood").value = ""
         saveItinerary(newItinerary)
