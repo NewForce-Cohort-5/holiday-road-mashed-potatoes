@@ -32,7 +32,9 @@ main.container {
 
 
 /* Attractions */
-
+.hide-att {
+    display: none;
+}
 
 
 /* Eatery */

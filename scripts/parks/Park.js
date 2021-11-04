@@ -15,7 +15,7 @@ export const Park = (obj) => {
     <div class="park-card">
       <h3 class="park-headline d-inline-block">${obj.fullName}</h3>
       <button id="details__${obj.id}" class="btn btn-success">Details</button>
-      <div class="hide-att">
+      <div class="d-none">
         <p class="park-number">Phone: ${obj.contacts.phoneNumbers[0].phoneNumber}</p>
         <div class="address">
           <p>Address:</p>
@@ -34,7 +34,7 @@ export const Park = (obj) => {
 }
 
 document.querySelector('.itenaryPreviewArea').addEventListener('click', e => {
-  if (e.target.id.startsWith('details')) {
+  if (e.target.id.startsWith('details__')) {
     if (e.target.nextElementSibling.style.display === '' || e.target.nextElementSibling.style.display === 'none') {
       e.target.nextElementSibling.style.display = 'block';
     } else {
