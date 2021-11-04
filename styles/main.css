@@ -66,7 +66,7 @@ main.container {
 
 /* Weather */
 .weather {
-    border: 1px
+    border: 1px;
     margin: 4px;
     padding: 4px;
     display: flex;
