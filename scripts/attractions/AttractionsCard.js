@@ -1,8 +1,8 @@
 export const bizarreCard = (bizarreries) => {
     return `
         <div class="biz-card">
-            <div class="name-biz"><h3>${bizarreries.name}<button id="details" type="button" class="btn btn-success">for more details click here</button></h3></div>
-            
+            <div class="name-biz"><h3>${bizarreries.name}</h3></div>
+            <button id="details__biz_${bizarreries.id}" type="button" class="btn btn-success">for more details click here</button>
         <div id="hidden-details" class="hide-att">
             <div class="state-name"><strong>State: ${bizarreries.state}</strong></div>
             <div class ="biz-description">${bizarreries.description}</div>
@@ -18,7 +18,7 @@ export const bizarreCard = (bizarreries) => {
 
 
 document.querySelector("body").addEventListener("click", clickEvent => {
-    if (clickEvent.target.id === "details") {
+    if (clickEvent.target.id === "details__biz_") {
         document.querySelector("#hidden-details").classList.toggle("hide-att")
 }
 })

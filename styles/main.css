@@ -79,7 +79,6 @@ main.container {
 
 /* Weather */
 .weather {
-    border: 1px;
     margin: 4px;
     padding: 4px;
     display: flex;
@@ -87,10 +86,12 @@ main.container {
     flex-direction: row;
 }
 .forecast {
+    border: 1px dotted whitesmoke;
     margin: 1px;
     padding: 1px;
 }
 .singleDay {
+    border: 1px solid skyblue;
     margin: 4px;
     padding: 4px;
 }

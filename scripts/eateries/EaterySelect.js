@@ -14,8 +14,8 @@ export const EaterySelect = () => {
 
 const render = eateryCollection => {
     contentTarget.innerHTML = `
-        <select class="dropdown" id="eaterySelect">
-            <option value="0">Please select an eatery...</option>
+        <select class="dropdown" id="eaterySelect" multiple>
+            <option value="0">Please select eateries:</option>
             ${
                 eateryCollection.map(eateryObject => {
                     const eateryName = eateryObject.businessName
@@ -30,8 +30,7 @@ const eventHub = document.querySelector("body")
 eventHub.addEventListener("change", (eventObject) => {
   
     if(eventObject.target.id === "eaterySelect"){
-        
-       const selectedEatery= eventObject.target.value
-       EateryList(selectedEatery)
+        let EatArray = Array.from(eventObject.target.selectedOptions).map(option => option.value)
+        EateryList(EatArray)
     }
 })
