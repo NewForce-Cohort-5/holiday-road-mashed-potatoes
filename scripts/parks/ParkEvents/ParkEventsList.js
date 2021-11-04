@@ -9,7 +9,13 @@ export const ParkEventsList = () => {
         let parkEventsArray = useParkEvents();
         let parkEventsHTML = "";
 
-        //if statement??
+        if(parkEventsFilter){
+            parkEventsArray = parkEventsFilter.map(value => {
+                return parkEventsArray.find(parkEvents => {
+                    return parkEvents.parkfullname === value
+                })
+            })
+        }
 
         parkEventsArray.forEach((parkEventsObj) => {
             parkEventsHTML += ParkEvents(parkEventsObj)
