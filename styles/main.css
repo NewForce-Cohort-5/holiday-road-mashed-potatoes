@@ -31,6 +31,13 @@ main.container {
 
 
 
+/* National Parks - Events */
+.parkEvents-card {
+    border: 1px solid rgb(4, 86, 110);
+    background: rgb(214, 198, 157);
+}
+
+
 /* Attractions */
 .hide-att {
     display: none;
@@ -54,6 +61,7 @@ main.container {
     width: 60px;
     height: 60px;
     border: 2px dashed yellowgreen;
+    background-color: white;
     padding: 4px;
     margin-top: 16px;
 }
@@ -62,6 +70,7 @@ main.container {
     width: 60px;
     height: 60px;
     border: 2px dashed crimson;
+    background-color: white;
     padding: 4px;
     margin-top: 16px;
 }
