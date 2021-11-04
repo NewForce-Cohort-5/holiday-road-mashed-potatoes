@@ -1,8 +1,9 @@
 export const bizarreCard = (bizarreries) => {
     return `
         <div class="biz-card">
-            <div class="name-biz"><h3>${bizarreries.name}</h3></div>
+            <div id="name-biz"><h3>${bizarreries.name}</h3></div>
             <button id="details__biz_${bizarreries.id}" type="button" class="btn btn-success">for more details click here</button>
+            
         <div id="hidden-details" class="hide-att">
             <div class="state-name"><strong>State: ${bizarreries.state}</strong></div>
             <div class ="biz-description">${bizarreries.description}</div>

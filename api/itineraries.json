@@ -1,0 +1,16 @@
+{
+  "itineraries": [
+    {
+      "Park": "Abraham Lincoln Birthplace National Historical Park",
+      "Bizarre": "Elvis Memorial Chapel",
+      "Eatery": "El Charro Cafe",
+      "id": 1
+    },
+    {
+      "Park": "Abraham Lincoln Birthplace National Historical Park",
+      "Bizarre": "Owney the Stuffed Dog Postal Mascot",
+      "Eatery": "Deer Park Tavern",
+      "id": 2
+    }
+  ]
+}
