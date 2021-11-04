@@ -39,6 +39,8 @@ main.container {
 
 /* Eatery */
 .amenetiesEatList {
+    display: flex;
+    gap: 10px;
     padding-left: 0;
     margin-left: 0; 
 }
