@@ -13,6 +13,22 @@ main.container {
     margin: 20px 20px 200px 20px;
 }
 
+.biz-card, .eateryList-card, .park-card {
+    border:1px solid rgb(104, 147, 104);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 20px rgb(214, 214, 214);
+}
+
+.btn {
+    margin-bottom: 10px;
+}
+
+#saveItinerary{
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
 
 /* Dropdown Menu */
 .dropdownMenuArea {
@@ -34,13 +50,17 @@ main.container {
 /* National Parks - Events */
 .parkEvents-card {
     border: 1px solid rgb(4, 86, 110);
-    background: rgb(214, 198, 157);
+    background: rgb(214, 198, 157)
 }
 
 
 /* Attractions */
 .hide-att {
     display: none;
+}
+
+.attractionAmeneties {
+    padding-top: 15px;
 }
 
 

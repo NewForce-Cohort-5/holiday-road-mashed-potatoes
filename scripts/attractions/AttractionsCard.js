@@ -7,7 +7,7 @@ export const bizarreCard = (bizarreries) => {
         <div id="hidden-details" class="hide-att">
             <div class="state-name"><strong>State: ${bizarreries.state}</strong></div>
             <div class ="biz-description">${bizarreries.description}</div>
-            <div class="attractionAmeneties"><h3>Ameneties:</h3>
+            <div class="attractionAmeneties"><h6><strong>Ameneties:</strong></h6>
                 <ul id="ameneties">
                     ${Ameneties(bizarreries.ameneties)}
                 </ul>
