@@ -15,7 +15,7 @@ export const Park = (obj) => {
     <div class="park-card">
       <h3 class="park-headline d-inline-block">${obj.fullName}</h3>
       <button id="details__${obj.id}" class="btn btn-success">Details</button>
-      <div class="d-none">
+      <div style="display: none;">
         <p class="park-number">Phone: ${obj.contacts.phoneNumbers[0].phoneNumber}</p>
         <div class="address">
           <p>Address:</p>
