@@ -26,6 +26,10 @@ const render = attractionCollection => {
     `
 }
 
+
+
+
+
 const contentbullseye = document.querySelector("body")
 contentbullseye.addEventListener("change", (attractionObject) => {
   
@@ -35,4 +39,3 @@ contentbullseye.addEventListener("change", (attractionObject) => {
        AttractionsList(selectedAttraction)
     }
 })
-
