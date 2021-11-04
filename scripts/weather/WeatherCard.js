@@ -10,3 +10,7 @@ export const forecast = (eachDay) => {
         </div>
     </section>`
 }
+
+// new Date(dateThing).toLocalDateString('en-US')
+// 11/3/2021
+// dateThing = 789102345678910 * 1000
