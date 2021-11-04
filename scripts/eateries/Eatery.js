@@ -1,7 +1,7 @@
 export const Eatery = (eateryObject) => {
     return `
         <div class="eateryList-card">
-            <div class="eateryName"><h3>${eateryObject.businessName}<h3></div>
+            <div id="eateryName"><h3>${eateryObject.businessName}<h3></div>
             <button id="details__${eateryObject.id}" class="btn btn-success">Details</button>
             <div class="hide-att" style="display: none">
                 <div class="eateryLocation"><strong>Location:</strong> ${eateryObject.city}, ${eateryObject.state}</div>

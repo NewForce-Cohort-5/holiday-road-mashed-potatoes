@@ -1,7 +1,7 @@
 export const bizarreCard = (bizarreries) => {
     return `
         <div class="biz-card">
-            <div class="name-biz"><h3>${bizarreries.name}<button id="details" type="button" class="btn btn-success">for more details click here</button></h3></div>
+            <div id="name-biz"><h3>${bizarreries.name}<button id="details" type="button" class="btn btn-success">for more details click here</button></h3></div>
             
         <div id="hidden-details" class="hide-att">
             <div class="state-name"><strong>State: ${bizarreries.state}</strong></div>

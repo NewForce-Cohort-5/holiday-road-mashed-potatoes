@@ -19,7 +19,7 @@ const render = (parks) => {
     <select id="parkFilter">
       <option value="0">Please select a park</option>
       ${
-        parks.map(park => `<option value="${park.id}">${park.fullName}</option>`)
+        parks.map(park => `<option>${park.fullName}</option>`)
       }
     </select>
   `;

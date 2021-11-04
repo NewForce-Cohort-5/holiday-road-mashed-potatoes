@@ -8,17 +8,23 @@ document.querySelector("body").addEventListener("click", clickEvent => {
         
         const newItinerary = {
             
-            name: document.querySelector("#name").value,
-            businessName: document.querySelector("#businessName").value,
-            entry: document.querySelector("#fullname").value
+            Park: document.querySelector("#parkFilter").value,
+            Bizarre: document.querySelector("#attractionSelect").value,
+            Eatery: document.querySelector("#eaterySelect").value
         }
         console.log(newItinerary)
         
-        document.querySelector("#name").value = ""
-        document.querySelector("#businessName").value = ""
-        document.querySelector("#entry").value = ""
-        document.querySelector("#mood").value = ""
+        // document.querySelector("#park-name").value = ""
+        // document.querySelector("#name-biz").value = ""
+        // document.querySelector("#eateryName").value = ""
         saveItinerary(newItinerary)
         .then(itineraryList)
     }
 })
+
+export const ItineraryForm = () => {
+    contentAccuracy.innerHTML = `
+        <aside>
+            <button id="saveItinerary">Save Itinerary</button>
+        </aside>`
+}
