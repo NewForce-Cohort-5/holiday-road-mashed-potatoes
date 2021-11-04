@@ -9,11 +9,11 @@
 
 
 /* Main Content */
-main.container {
+main {
     margin: 20px 20px 200px 20px;
 }
 
-.biz-card, .eateryList-card, .park-card {
+.card {
     border:1px solid rgb(104, 147, 104);
     padding: 20px;
     margin-bottom: 20px;

@@ -27,7 +27,7 @@ export const EateryList = (eateryFilter) => {
 
         contentTarget.innerHTML = `
             <h2>Eateries</h2>
-            <div class="eatery-list">
+            <div class="eatery-list card">
                 ${eateryHTML}
             </div>
         `
