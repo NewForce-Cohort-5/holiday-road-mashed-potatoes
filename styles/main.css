@@ -1,3 +1,104 @@
-.hide-att{
-    display: none;
+/* COLORS: */
+/* blue: rgb(4, 86, 110) or #04566E */
+/* dark green: rgb(104, 147, 104) or #689368 */
+/* bright green: rgb(180, 211, 48) or #B4D330 */
+/* tan: rgb(214, 198, 157) or #D6C69D */
+
+/* Nav */
+
+
+
+/* Main Content */
+main.container {
+    margin: 20px 20px 200px 20px;
+}
+
+
+/* Dropdown Menu */
+.dropdownMenuArea {
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+	flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* National Parks */
+
+
+
+/* Attractions */
+
+
+
+/* Eatery */
+.amenetiesEatList {
+    padding-left: 0;
+    margin-left: 0; 
+}
+
+.amenetiesEatList li {
+    list-style-type: none;
+    font-size: 14px;
+}
+
+.amenetiesEatIcon {
+    width: 60px;
+    height: 60px;
+    border: 2px dashed yellowgreen;
+    padding: 4px;
+    margin-top: 16px;
+}
+
+.amenetiesEatIcon.nope {
+    width: 60px;
+    height: 60px;
+    border: 2px dashed crimson;
+    padding: 4px;
+    margin-top: 16px;
+}
+
+
+
+/* Weather */
+
+
+
+/* Footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    background-color: rgb(104, 147, 104);
+    margin-top: 30px;
+    padding: 20px;
+    /* box-shadow: 0px -10px 20px rgb(189, 189, 189); */
+}
+
+footer p{
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    color: rgb(180, 211, 48);
+}
+
+footer img{
+    display: block;
+    width: 90px;
+    height: auto;
+    margin: auto;
+    border-radius: 20px;
 }
