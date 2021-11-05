@@ -148,6 +148,7 @@ footer img{
     display: block;
     width: 90px;
     height: auto;
+    background-color: white;
     margin: auto;
     border-radius: 20px;
 }
