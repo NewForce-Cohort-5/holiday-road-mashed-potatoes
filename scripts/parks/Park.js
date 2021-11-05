@@ -12,7 +12,7 @@ const Images = (arr) => {
 
 export const Park = (obj) => {
   return `
-    <div class="park-card">
+    <div class="park-card card">
       <h3 id="park-name" class="park-headline d-inline-block">${obj.fullName}</h3>
       <button id="details__${obj.id}" class="btn btn-success">Details</button>
       <div style="display: none;">

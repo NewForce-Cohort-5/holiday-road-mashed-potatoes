@@ -133,7 +133,7 @@ footer p{
     font-size: 14px;
     text-align: center;
     color: white;
-    padding-top: 10px;
+    /* padding-top: 10px; */
 }
 
 footer a{
@@ -150,4 +150,13 @@ footer img{
     height: auto;
     margin: auto;
     border-radius: 20px;
+}
+
+.footerBlurb {
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(180, 211, 48);
+    padding-top: 20px;
 }
