@@ -14,7 +14,7 @@ export const getParkEvents = () => {
 
 
 
-/////Sample of the data provider:
+/////Sample of the data array:
 // "data":[
 //   {"location":"",
 //   "updateuser":"",
@@ -66,4 +66,4 @@ export const getParkEvents = () => {
 //   "subjectname":"",
 //   "tags":[]
 //   }
-]
+// ]

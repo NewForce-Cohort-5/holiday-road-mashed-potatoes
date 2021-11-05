@@ -11,14 +11,15 @@ const Images = (arr) => {
 }
 
 export const Park = (obj) => {
-  return `
+  return ` 
+    <h2>National Parks</h2>
     <div class="park-card card">
-      <h3 id="park-name" class="park-headline d-inline-block">${obj.fullName}</h3>
+      <h4 id="park-name" class="park-headline d-inline-block">${obj.fullName}</h4>
       <button id="details__${obj.id}" class="btn btn-success">Details</button>
       <div style="display: none;">
-        <p class="park-number">Phone: ${obj.contacts.phoneNumbers[0].phoneNumber}</p>
+        <p class="park-number"><strong>Phone:</strong> ${obj.contacts.phoneNumbers[0].phoneNumber}</p>
         <div class="address">
-          <p>Address:</p>
+          <p><strong>Address:</strong></p>
           <p class="add-line1">${obj.addresses[0].line1}</p>
           <p class="add-line2">${obj.addresses[0].line2}</p>
           <p class="add-line3">${obj.addresses[0].line3}</p>

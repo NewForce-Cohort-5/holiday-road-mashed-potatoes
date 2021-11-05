@@ -29,6 +29,18 @@
       "Bizarre": "Big White Shirt",
       "Eatery": "Big Bob Gibson Bar-B-Que",
       "id": 5
+    },
+    {
+      "Park": "Acadia National Park",
+      "Bizarre": "Big White Shirt",
+      "Eatery": "Marge's Pancake House",
+      "id": 6
+    },
+    {
+      "Park": "Voyageurs National Park",
+      "Bizarre": "Big White Shirt",
+      "Eatery": "Marge's Pancake House",
+      "id": 7
     }
   ]
 }
