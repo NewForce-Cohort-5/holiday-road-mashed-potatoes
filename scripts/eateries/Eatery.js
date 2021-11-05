@@ -1,12 +1,12 @@
 export const Eatery = (eateryObject) => {
     return `
         <div class="eateryList-card">
-            <div id="eateryName"><h3>${eateryObject.businessName}<h3></div>
-            <button id="details__${eateryObject.id}" class="btn btn-success">Details</button>
+            <div id="eateryName"><h4>${eateryObject.businessName}<h4></div>
+            <button id="details__${eateryObject.id}" class="btn btn-success btn-sm">for more details click here</button>
             <div class="hide-att" style="display: none">
                 <div class="eateryLocation"><strong>Location:</strong> ${eateryObject.city}, ${eateryObject.state}</div>
                 <div class="eateryAbout"><p>${eateryObject.description}</p></div>
-                <div class="eateryAmeneties"><strong>Ameneties:</strong>
+                <div class="eateryAmeneties"><h6><strong>Ameneties:</strong></h6>
                     <ul id ="ameneties" class="amenetiesEatList">
                         ${Ameneties(eateryObject.ameneties)}
                     </ul>

@@ -25,6 +25,6 @@ document.querySelector("body").addEventListener("click", clickEvent => {
 export const ItineraryForm = () => {
     contentAccuracy.innerHTML = `
         <aside>
-            <button id="saveItinerary">Save Itinerary</button>
+            <button id="saveItinerary" class="btn btn-outline-success">Save Itinerary</button>
         </aside>`
 }

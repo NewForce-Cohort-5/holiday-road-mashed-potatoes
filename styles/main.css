@@ -7,33 +7,118 @@
 /* Nav */
 
 
+/* Header */
+header {
+    background-image: url("https://i2.wp.com/blueridgemountainstravelguide.com/wp-content/uploads/2021/06/Grandfather-Mountain-Swinging-Bridge-View.jpg?w=1280&ssl=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgb(4, 86, 110);
+    height: 100px;
+    border: 5px solid rgb(104, 147, 104);
+    padding-top: 28px;
+}
+
+header h1{
+    color: white;
+    font-family: 'La Belle Aurore', serif;
+    font-size: 44px;
+    line-height: 20px;
+    text-align: center;
+    text-shadow: 4px 4px 10px rgb(4, 86, 110);
+}
+
+header h6{
+    color: white;
+    font-size:19px;
+    text-align:center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-shadow: 4px 4px 5px rgb(4, 86, 110);
+}
+
 
 /* Main Content */
-main.container {
+main {
     margin: 20px 20px 200px 20px;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(104, 147, 104); 
+}
+
+.card {
+    border:1px solid rgb(104, 147, 104);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 20px rgb(214, 214, 214);
+}
+
+.park-card .btn {
+    margin-bottom: 10px;
+    width: 80px;
+}
+
+.btn {
+    margin-bottom: 10px;
+}
+
+#saveItinerary{
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+.emptySpacer-lg {
+    height: 60px;;
+}
+
+.emptySpacer-md {
+    height: 30px;;
 }
 
 
 /* Dropdown Menu */
 .dropdownMenuArea {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content:flex-start;
     align-content: flex-start;
     flex-direction: row;
 	flex-wrap: wrap;
     gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
 }
 
 
 /* National Parks */
+p.add-line1, p.add-line2, p.add-line3 {
+    margin-bottom: 0px;
+}
 
+.park-images {
+    overflow: hidden;
+}
+
+
+/* National Parks - Events */
+.parkEvents-card {
+    border: 1px solid rgb(4, 86, 110);
+    background: rgb(214, 198, 157)
+}
 
 
 /* Attractions */
 .hide-att {
     display: none;
+}
+
+.attractionAmeneties {
+    padding-top: 15px;
 }
 
 
@@ -54,6 +139,7 @@ main.container {
     width: 60px;
     height: 60px;
     border: 2px dashed yellowgreen;
+    background-color: white;
     padding: 4px;
     margin-top: 16px;
 }
@@ -62,19 +148,20 @@ main.container {
     width: 60px;
     height: 60px;
     border: 2px dashed crimson;
+    background-color: white;
     padding: 4px;
     margin-top: 16px;
 }
 
 
-
 /* Weather */
 .weather {
     margin: 4px;
-    padding: 4px;
+    padding: 4px 4px 24px 4px;
     display: flex;
     font-size: small;
     flex-direction: row;
+    border-bottom: 2px dotted rgb(224, 224, 224);
 }
 .forecast {
     border: 1px dotted whitesmoke;
@@ -96,7 +183,7 @@ footer {
     width: 100vw;
     background-color: rgb(104, 147, 104);
     margin-top: 30px;
-    padding: 20px;
+    padding: 30px 20px 20px 20px;
     /* box-shadow: 0px -10px 20px rgb(189, 189, 189); */
 }
 
@@ -104,7 +191,7 @@ footer p{
     font-size: 14px;
     text-align: center;
     color: white;
-    padding-top: 10px;
+    /* padding-top: 10px; */
 }
 
 footer a{
@@ -119,6 +206,17 @@ footer img{
     display: block;
     width: 90px;
     height: auto;
+    background-color: white;
     margin: auto;
     border-radius: 20px;
 }
+
+.footerBlurb {
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(180, 211, 48);
+    padding-top: 20px;
+}
+
