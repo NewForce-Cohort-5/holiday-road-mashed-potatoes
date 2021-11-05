@@ -27,7 +27,7 @@ const render = (parks) => {
 // This section populates Latitude and Longitude for the weather API
 document.querySelector('body').addEventListener('change', e => {
   if (e.target.id === 'parkFilter') {
-    const selected = useParks().find( park => park.id === e.target.value );
+    const selected = useParks().find( park => park.fullName === e.target.value );
     parkLatLong['lat'] = selected.latitude;
     parkLatLong['lon'] = selected.longitude;
     document.querySelector('.parkEntry').innerHTML = Park(selected);
