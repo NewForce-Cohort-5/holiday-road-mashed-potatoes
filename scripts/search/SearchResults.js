@@ -30,17 +30,24 @@ window.onload = () => {
           allItineraries.filter(itinerary => itinerary.Park.toLowerCase().includes(query) || itinerary.Bizarre.toLowerCase().includes(query) || itinerary.Eatery.toLowerCase().includes(query))
         );
 
-        // 
+        // Make the result from the pushing into a single dimensional array
         results = results.flat();
 
+        // This will be the resulting html of course
         resultsHTML = ''
 
-        results = results.map(currentResult => {
+        // Map through the results and make them into viewable results
+        results.map(currentResult => {
 
+          // Set up variables for name of data and it's type
+          // Also make a button for each result
           let name = '';
           let type = '';
           let addButton = `<button id="add-${currentResult.id}" class="col btn btn-success">Add To Itinerary Preview</button>`;
 
+          // Depending on which name property is present on the object
+          // we can determine what type of data it is
+          // if it's an itinerary then don't make the button present
           if (currentResult.fullName) {
             name = currentResult.fullName;
             type = 'Park';
@@ -56,6 +63,7 @@ window.onload = () => {
             addButton = '';
           }
 
+          // The component... FINALLY!!!
           resultsHTML += `
             <div class="row mb-4">
               <h4 class="col">${type}: ${name}</h4>
@@ -64,6 +72,7 @@ window.onload = () => {
           `;
 
         });
+        // Slap them results into... the results... yep
         document.querySelector('#search-results').innerHTML = resultsHTML;
       });
     }
@@ -87,9 +96,11 @@ window.onload = () => {
       const event = new Event('change', {'bubbles': true, 'cancelable': false, 'composed': true});
 
       // Create an array from the select's options and find the one that the user clicked on
-      // 
+      // Once it is found it will be selected in the dropdown
       Array.from(options).find(option => option.value === name).selected = true;
 
+      // This will trigger the change event in the appropriate select tag
+      // adding or removing it from the itinerary preview
       select.dispatchEvent(event);
       
     }
